@@ -51,9 +51,9 @@ rot2 = [cos(teta) -sin(teta);sin(teta) cos(teta)];
 while(true)
   q = apply_transform(q,rot);
   q2 = apply_transform(q2,rot2);
-  sleep(0.1)
   clf;
   plot_clock
   print_ret(q);
   print_ret(q2);
+  sleep(1);
 endwhile
