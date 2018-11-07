@@ -6,7 +6,7 @@ function print_ret(q)
   line([q.p4(1),q.p3(1)],[q.p4(2),q.p3(2)])
   line([q.p4(1),q.p2(1)],[q.p4(2),q.p2(2)])
 endfunction
-function novo_quadrado = apply_transform(q,rot)
+function novo_quadrado = transform_object(q,rot)
   novo_quadrado.p1=rot*q.p1;
   novo_quadrado.p2=rot*q.p2;
   novo_quadrado.p3=rot*q.p3;
@@ -49,8 +49,8 @@ teta = -pi/30;
 rot2 = [cos(teta) -sin(teta);sin(teta) cos(teta)];
 
 while(true)
-  q = apply_transform(q,rot);
-  q2 = apply_transform(q2,rot2);
+  q = transform_object(q,rot);
+  q2 = transform_object(q2,rot2);
   clf;
   plot_clock
   print_ret(q);

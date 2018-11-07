@@ -1,5 +1,5 @@
 function ex1(mat,graus)
-  [cx,cy] = calc_center(mat)
+  [cx,cy] = calc_center(mat);
   trans = [1 0 -cx; 0 1 -cy; 0 0 1];
   trans_v = inv(trans);
   teta = graus * pi/180;
