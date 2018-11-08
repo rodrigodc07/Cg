@@ -5,10 +5,9 @@ function ex3(mat)
   trans_v = inv(trans);
   rot = [cos(teta) -sin(teta) 0 ;sin(teta) cos(teta) 0; 0 0 1];
   full_transform =  rot * trans_v * rot * trans;
-  nq = mat;
   while (true)
-    nq = apply_transform(nq,full_transform);
-    print_mat(nq)
+    mat = apply_transform(mat,full_transform);
+    print_mat(mat)
     sleep(0.1)
   endwhile
 endfunction
