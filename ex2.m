@@ -8,6 +8,7 @@ function ex2(mat)
   nq = mat;
   while (true)
     nq = apply_transform(nq,full_transform);
+    print_mat(nq)
     sleep(0.1)
   endwhile
 endfunction
