@@ -1,5 +1,5 @@
 function nova_matriz = apply_transform(m,T)
- [lin,col] = size(m)
+ [lin,col] = size(m);
  nova_matriz = zeros(lin,col);
  mat = T*m;
  for i = 1:col
