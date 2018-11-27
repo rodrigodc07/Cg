@@ -1,7 +1,7 @@
 original = [135 493 520 111; 12 17 271 267; 1 1 1 1];
 transformada = [1 300 300 1; 1 1 300 300; 1 1 1 1]; 
 
-placa = imread('Imagens Teste-20181121/Placa_de_Trânsito_PARE.jpg');
+placa = imread('Placa_de_Trânsito_PARE.jpg');
 figure("Name","Imagem Original");
 imshow(placa);
 

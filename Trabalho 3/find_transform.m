@@ -1,6 +1,6 @@
 function T = find_transform(original,transformada)
     [lin,col] = size(transformada);
-    transformada_visivel = [transformada(1,:);transformada(2,:)]
+    transformada_visivel = [transformada(1,:);transformada(2,:)];
     L = reshape(transformada_visivel,col*(lin-1),1);
     for i = 1:col
        x = original(1,i);
